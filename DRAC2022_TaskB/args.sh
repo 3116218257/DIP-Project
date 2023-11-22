@@ -1,0 +1,1 @@
+python train.py --backbone 'resnet50' --device 0 --lr 0.001 --batch_size 256 --epoch 40 --save_ckpt_dir './ckpt/'
