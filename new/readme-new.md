@@ -1,6 +1,6 @@
 # ReadMe
 
-- `environment.yml`：conda配置环境
+- `environment.yml`：conda配置环境，环境名为py39
   conda env create -f environment.yml
 
 - 注意修改`train.py`中dataset路径
