@@ -66,7 +66,7 @@ def train_and_evaluate_fold(train_loader, val_loader, model, criterion, optimize
     val_accuracy = accuracy_score(val_label_list, val_pred_list)
     val_kappa = cohen_kappa_score(val_label_list, val_pred_list, weights='quadratic')
 
-    print(f'Epoch {epoch}: Train Loss: {train_loss:.3f}, Train Acc: {train_accuracy:.2f}, Train Kappa: {train_kappa:.2f}, Val Loss: {val_loss:.3f}, Val Acc: {val_accuracy:.2f}, Val Kappa: {val_kappa:.2f}')
+    print(f'Epoch {epoch}: Train Loss: {train_loss:.3f}, Train Acc: {train_accuracy:.2f}%, Train Kappa: {train_kappa:.2f}, Val Loss: {val_loss:.3f}, Val Acc: {val_accuracy:.2f}%, Val Kappa: {val_kappa:.2f}')
 
     return train_accuracy, train_kappa, val_accuracy, val_kappa
 
@@ -132,11 +132,11 @@ def kfold_cross_validation(device, model_origin, image_paths, labels, args, num_
         torch.save(best_model_info['state_dict'], best_model_path)
 
         fold_models_info.append(best_model_info)
-        print(f"Fold {fold+1} completed. Best Epoch: {best_model_info['epoch']}, Train Acc: {best_model_info['train_accuracy']:.2f}, Val Acc: {best_model_info['val_accuracy']:.2f}, Kappa: {best_model_info['kappa']:.4f}")
+        print(f"Fold {fold+1} completed. Best Epoch: {best_model_info['epoch']}, Train Acc: {best_model_info['train_accuracy']:.2f}%, Val Acc: {best_model_info['val_accuracy']:.2f}%, Kappa: {best_model_info['kappa']:.4f}")
 
     # 打印所有fold的最佳模型信息
     for i, info in enumerate(fold_models_info, 1):
-        print(f"Fold {i} - Best Epoch: {info['epoch']}, Train Acc: {info['train_accuracy']:.2f}, Val Acc: {info['val_accuracy']:.2f}, Kappa: {info['kappa']:.4f}")
+        print(f"Fold {i} - Best Epoch: {info['epoch']}, Train Acc: {info['train_accuracy']:.2f}%, Val Acc: {info['val_accuracy']:.2f}%, Kappa: {info['kappa']:.4f}")
         ########## End Training one fold ##########
 
 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
     ########## Data preprocessing ##########
     train_image_dir = '../DRAC2022_TaskB/data/1. Original Images/a. Training Set/'
     train_label_path = '../DRAC2022_TaskB/data/2. Groundtruths/a. DRAC2022_ Image Quality Assessment_Training Labels.csv'
-    test_image_dir = '../DRAC2022_TaskB/data/1. Original Images/b. Testing Set/'
+    # test_image_dir = '../DRAC2022_TaskB/data/1. Original Images/b. Testing Set/'
 
     # train set
     train_image_paths = []

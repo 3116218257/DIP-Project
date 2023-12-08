@@ -7,7 +7,7 @@ from datetime import datetime
 def get_config():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--batch_size', type=int, default=32)
+    parser.add_argument('--batch_size', type=int, default=4)
     parser.add_argument('--lr', type=float, default=1e-4)
     parser.add_argument('--weight_decay', type=float, default=1e-4)  
     # 接受多个GPU设备ID，例如：--device 0 1 2 3
