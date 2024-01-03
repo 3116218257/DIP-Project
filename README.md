@@ -1,4 +1,8 @@
 # DIP-Project
+## Contents
+- [Clone the repo](#heading-one)
+- [Download dataset](#heading-two)
+- [Usage](#heading-three)
 ## Clone the repo
 using the following command line can clone this repo in to your machine
     ```
