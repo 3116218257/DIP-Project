@@ -1,15 +1,13 @@
 # DIP-Project
 
-## 文件构成！！！
-
-- new里是cx修改后的代码，在lys的代码的基础上增加了数据集扩增（main.py 里的repeat）和集成学习（test.py里的average和vote）。另外还修改了一些细节，比如把dataset_dir改到了args里设置。训练和测试时使用的命令可以参考train.sh和test.sh。
-
-- new2里是cx自己写的代码，不带k-fold的版本，但似乎有什么大病，你要是觉得没用，删了也行
-
-- new2_kfold是cx写的带k-fold的版本，但似乎和它的父亲一样，也有什么大病，你要是觉得没用，删了也行
-
-- new3是cx写的那个两层的模型，不知道是因为有病还是这个模型本来就不行，效果也不好，但我还是把它放上来了，你要是觉得没用，删了也行
-
+## Directory Structure
+- ```DRAC2022_TaskB``` basic model selection part
+- ```new``` added with some improving methods 
+- ```new2``` code with no k-fold
+- ```new2_kfold``` code with k-fold
+- ```new3``` prototye code(do not use)
+- ```README.md```
+- ```environment.yml```
 ## Contents
 - [Clone The Repo](#clone-the-repo)
 - [Download Dataset](#download-dataset)
