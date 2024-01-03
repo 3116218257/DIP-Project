@@ -14,7 +14,7 @@
 - [Download Dataset](#download-dataset)
 - [Environment](#environment)
 - [Usage](#usage)
-- 
+
 ## Clone The Repo
 Using the following command line can clone this repo into your machine<br>
 ```bash 
