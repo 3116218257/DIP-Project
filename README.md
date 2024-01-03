@@ -16,7 +16,7 @@
 - [Usage](#usage)
 
 ## Clone The Repo
-Using the following command line can clone this repo into your machine<br>
+Using the following command line can clone this repo into your machine.<br>
 ```bash 
 git clone https://github.com/3116218257/DIP-Project.git
 cd DIP-Project
@@ -35,7 +35,7 @@ rm -rf 'B. Image Quality Assessment.zip'
 ```
 
 ## Environment
-Just create a virtual environment for our project using command line<br>
+Just create a virtual environment for our project using command line.<br>
 ```bash
 conda env create -f environment.yml
 ```
@@ -49,7 +49,7 @@ Please change the dataset directory in ```DRAC2022_TaskB/dataset.py``` and ```DR
 
 ### Backbone Selection
 You can choose different backbones in this section. Please refer to the configuration settings in ```train.py``` and change the ```args.sh``` file to use a new backbone.<br>
-Then simply run the train.py using command<br>
+Then simply run ```train.py``` using command.<br>
 ```bash
 sh args.sh.
 ```
