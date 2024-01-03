@@ -44,6 +44,9 @@ Then simply run the train.py using command<br>
 ```bash
 sh args.sh.
 ```
-Finally run test.py.
+Finally run ```test.py``` to get your needed ```.csv``` file.<br>
+```bash
+python test.py
+```
 
 
