@@ -1,4 +1,11 @@
 # DIP-Project
+
+## 文件构成！！！
+
+- new里是cx修改后的代码，在lys的代码的基础上增加了数据集扩增（main.py 里的repeat）和集成学习（test.py里的average和vote）。另外还修改了一些细节，比如把dataset_dir改到了args里设置。训练和测试时使用的命令可以参考train.sh和test.sh。
+
+- 
+
 ## Contents
 - [Clone the repo](#heading-one)
 - [Download dataset](#heading-two)
@@ -16,13 +23,23 @@ cd data
 ```
 
 ## Download dataset
-You need to download the dataset, you get get it from https://data.mendeley.com/datasets/s8kbw25s3x/1 , if you downloaded the zipped file, use this command
+You need to download the Task B dataset, you get get it from https://data.mendeley.com/datasets/s8kbw25s3x/1 , if you downloaded the zipped file, use this command
 ```bash
 unzip 'B. Image Quality Assessment.zip'
 rm -rf 'B. Image Quality Assessment.zip'
 ```
 
 ## Usage
-Then simply run the train.py first using command sh args.sh.
+There are two sections, the ```DARC2022_TaskB``` directory contains our model selection works, the ```new``` directory contains our improving method with specific model, you can choose any of them.
+### Reminder
+Please change the dataset root in ```dataset.py``` and ```train.py```!
 
+### Multi model choose
+You can choose different model in this section. If you want to choose different model, just read the ```train.py``` and change the ```args.sh``` file to adjust a new model.<br>
+Then simply run the train.py using command<br>
+```bash
+sh args.sh.
+```
 Finally run test.py.
+
+
