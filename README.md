@@ -55,4 +55,7 @@ Finally run ```test.py``` to get your needed ```.csv``` file.<br>
 python test.py
 ```
 
+### Improving Method
+The series of ```new``` directory contains our different version of code, we suggest to use the code in ```new```, the process of execution is similar with the operation above, use ```train.sh``` and ```test.sh``` to get the final ```.csv``` file.
+
 
