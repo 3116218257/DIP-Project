@@ -13,6 +13,7 @@
 ## Contents
 - [Clone The Repo](#clone-the-repo)
 - [Download Dataset](#download-dataset)
+- [Environment](#environment)
 - [Usage](#usage)
 ## Clone The Repo
 Using the following command line can clone this repo in to your machine<br>
@@ -32,6 +33,13 @@ You need to download the Task B dataset, you get get it from https://data.mendel
 unzip 'B. Image Quality Assessment.zip'
 rm -rf 'B. Image Quality Assessment.zip'
 ```
+
+## Environment
+Just create a virtual environment for our project using command line<br>
+```bash
+conda env create -f environment.yml
+```
+If there still some missing package, just follow the version in the ```environment.yml```
 
 ## Usage
 There are two sections, the ```DARC2022_TaskB``` directory contains our model selection works, the ```new``` directory contains our improving method with specific model, you can choose any of them.
