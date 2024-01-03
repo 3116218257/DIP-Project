@@ -8,7 +8,7 @@
 - ```new3``` prototye code(a new structure with 2 levels of resnet)
 - ```README.md```
 - ```environment.yml```
-- 
+
 ## Contents
 - [Clone The Repo](#clone-the-repo)
 - [Download Dataset](#download-dataset)
