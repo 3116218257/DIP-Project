@@ -1,4 +1,4 @@
-name: Diffusion
+name: DIP
 dependencies:
   - python=3.8.18=h955ad1f_0
   - pip:
