@@ -6,7 +6,8 @@
 ## Clone the repo
 using the following command line can clone this repo in to your machine<br>
 ```bash 
-git clone  
+git clone https://github.com/3116218257/DIP-Project.git
+cd DIP-Project
 ```
 
 
