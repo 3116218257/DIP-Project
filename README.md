@@ -1,4 +1,11 @@
 # DIP-Project
+
+## 文件构成！！！
+
+- new里是cx修改后的代码，在lys的代码的基础上增加了数据集扩增（main.py 里的repeat）和集成学习（test.py里的average和vote）。另外还修改了一些细节，比如把dataset_dir改到了args里设置。训练和测试时使用的命令可以参考train.sh和test.sh。
+
+- 
+
 ## Contents
 - [Clone the repo](#heading-one)
 - [Download dataset](#heading-two)
