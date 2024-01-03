@@ -11,9 +11,9 @@
 - new3是cx写的那个两层的模型，不知道是因为有病还是这个模型本来就不行，效果也不好，但我还是把它放上来了，你要是觉得没用，删了也行
 
 ## Contents
-- [Clone the repo](#heading-one)
-- [Download dataset](#heading-two)
-- [Usage](#heading-three)
+- [Clone The Repo](#clone-the-repo)
+- [Download Dataset](#download-dataset)
+- [Usage](#usage)
 ## Clone the repo
 Using the following command line can clone this repo in to your machine<br>
 ```bash 
