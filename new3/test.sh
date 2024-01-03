@@ -1,0 +1,1 @@
+python test.py --model resnet resnet --model_path saved_models/0/convnext_epoch7.pth saved_models_erosion5/convnext_epoch4.pth --test_image_dir data/test erosion_5/test

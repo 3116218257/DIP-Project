@@ -1,0 +1,1 @@
+python test.py --model resnet resnet resnet --model_path saved_models_size1024_bs4_augment10/resnet_epoch32.pth saved_models_size1024_bs4_augment10/resnet_epoch31.pth saved_models_size1024_bs4_augment10/resnet_epoch49.pth --test_image_dir data/test data/test data/test
