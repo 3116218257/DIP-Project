@@ -14,7 +14,7 @@
 - [Clone The Repo](#clone-the-repo)
 - [Download Dataset](#download-dataset)
 - [Usage](#usage)
-## Clone the repo
+## Clone The Repo
 Using the following command line can clone this repo in to your machine<br>
 ```bash 
 git clone https://github.com/3116218257/DIP-Project.git
@@ -26,7 +26,7 @@ mkdir data
 cd data
 ```
 
-## Download dataset
+## Download Dataset
 You need to download the Task B dataset, you get get it from https://data.mendeley.com/datasets/s8kbw25s3x/1 , if you downloaded the zipped file, use this command
 ```bash
 unzip 'B. Image Quality Assessment.zip'
@@ -38,7 +38,7 @@ There are two sections, the ```DARC2022_TaskB``` directory contains our model se
 ### Reminder
 Please change the dataset root in ```dataset.py``` and ```train.py```!
 
-### Multi model choose
+### Multi Model Choose
 You can choose different model in this section. If you want to choose different model, just read the ```train.py``` and change the ```args.sh``` file to adjust a new model.<br>
 Then simply run the train.py using command<br>
 ```bash
