@@ -1,0 +1,1 @@
+python test.py --model resnet resnet --model_path saved_models_resnet101_bs64_base_aug_sup/fold_2_best_resnet_model.pth saved_models_resnet101_bs64_base_aug_sup_2/fold_2_best_resnet_model.pth --test_image_dir data/test data/test
