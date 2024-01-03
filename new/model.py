@@ -58,20 +58,20 @@ class SBResNet(torch.nn.Module):
     def forward(self, x):
         return self.mlp(self.cnn(x))
     
-class SBConvNet(nn.Module):
-    '''
-    Convnext
-    '''
+# class SBConvNet(nn.Module):
+#     '''
+#     Convnext
+#     '''
 
-    def __init__(self):
-        super(SBConvNet, self).__init__()
-        self.cnn = convnet(weights='ConvNeXt_Base_Weights.DEFAULT')  # 不知道输入图像的size应该设置为多少
-        self.mlp = torch.nn.Sequential(
-            torch.nn.Linear(1000, 128),  # ConvNeXt输出默认大小为1000
-            torch.nn.ReLU(inplace=True),
-            torch.nn.Linear(128, 3),
-            # torch.nn.Sigmoid()  # 原来的方法有，在此删除
-        )
+#     def __init__(self):
+#         super(SBConvNet, self).__init__()
+#         self.cnn = convnet(weights='ConvNeXt_Base_Weights.DEFAULT')  # 不知道输入图像的size应该设置为多少
+#         self.mlp = torch.nn.Sequential(
+#             torch.nn.Linear(1000, 128),  # ConvNeXt输出默认大小为1000
+#             torch.nn.ReLU(inplace=True),
+#             torch.nn.Linear(128, 3),
+#             # torch.nn.Sigmoid()  # 原来的方法有，在此删除
+#         )
 
-    def forward(self, x):
-        return self.mlp(self.cnn(x))
+#     def forward(self, x):
+#         return self.mlp(self.cnn(x))
